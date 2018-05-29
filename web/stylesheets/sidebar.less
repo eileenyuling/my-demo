@@ -1,0 +1,55 @@
+.sidebar {
+  background-color: white;
+  min-height: 100%;
+  width: 110px;
+  position: relative;
+
+  .sidebar-item {
+    padding: 15px 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .active-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 32px;
+    background-color: @basic-orange;
+  }
+
+  .inactive-icon {
+    opacity: 0;
+  }
+
+  .tab-icon {
+    width: 18px;
+    margin-left: 18px;
+    margin-right: 8px;
+  }
+
+  .tab-icon-inactive {
+    opacity: 0.5;
+  }
+
+  .item-name {
+    font-size: 14px;
+  }
+
+  .sidebar-toggle-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 86%;
+    left: 7%;
+    text-align: center;
+    cursor: pointer;
+
+    .sidebar-toggle {
+      border-top: 1px solid @lighter-gray;
+      color: @light-gray;
+      font-size: 24px;
+    }
+
+  }
+
+}

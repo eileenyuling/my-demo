@@ -1,0 +1,104 @@
+.edit {
+  .page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: @black;
+    line-height: 48px;
+  }
+
+  .properties {
+    display: flex;
+    justify-content: flex-start;
+    background-color: @white;
+    border: 1px solid @lighter-gray;
+    margin-top: 24px;
+  }
+
+  .property-list {
+    color: @black;
+    border-right: 1px solid @lighter-gray;
+    cursor: pointer;
+    padding: 0;
+
+    .property-item {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 32px;
+      border-top: 1px solid @lighter-gray;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    .selected-property {
+      background-color: #fff8da;
+    }
+  }
+
+  .operate {
+    cursor: pointer;
+    color: @btn-color;
+  }
+}
+
+.add-new-property-modal, .property-content {
+  padding: 40px;
+  width: 100%;
+
+  .add-price {
+    background-color: @light-green;
+    padding: 24px;
+  }
+
+  .price-input {
+    margin-left: 16px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .add-btn {
+    margin-top: 24px;
+  }
+
+  .price-tooltip {
+    width: 20px;
+    position: absolute;
+    right: 8px;
+    bottom: 16px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .select {
+    height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .triangle-down {
+    position: absolute;
+    bottom: 44px;
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid @black;
+  }
+
+  .tooltip-text {
+    position: absolute;
+    background-color: @black;
+    color: @white;
+    bottom: 52px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    left: 108px;
+  }
+}
+
+.edit-modal {
+  .edit-input {
+    width: 80%;
+  }
+}
